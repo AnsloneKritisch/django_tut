@@ -1,0 +1,14 @@
+DJango is Python Based High Level Framework 
+
+Django is a back-end server side web framework.
+
+Django is free, open source and written in Python.
+
+Django makes it easier to build web pages using Python.
+
+MVT -> Model View Templates -> DJango -> Hard to learn
+# MVC -> Model View Controller -> React js , Lavel , Node Js etc.. -> Easy to learn 
+
+First we will learn -> View(connection between model and Templates)
+Second we will learn -> Templates -. Frontend(Html, CSS ,Bootstrap)
+Third we will learnMOdel -> Database
