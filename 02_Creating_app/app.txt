@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------
 
-django-admin startproject dj2
+django-admin startproject project_name
 
 ----------------------------------------------------------------------
 
-cd dj2
+cd project_name
 
 ----------------------------------------------------------------------
 
-python manage.py startapp mu
+python manage.py startapp app_name
 
 ----------------------------------------------------------------------
 
@@ -25,16 +25,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mu',
+    'app_name',
 ]
 
 -------------------------------------------------
 
 
-dj2 -> url.py -> 
+app_name -> url.py -> we import app_data 
 
 from django.urls import path
-from mu import views
+from app_name import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -43,7 +43,8 @@ urlpatterns = [
 
 -------------------------------------------------------
 
-mu -> views.py ->
+app_name -> views.py ->
+
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.http import HttpResponse
