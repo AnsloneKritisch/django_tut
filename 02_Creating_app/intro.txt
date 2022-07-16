@@ -1,0 +1,73 @@
+DJango is Python Based High Level Framework 
+
+MVT -> Model View Templates -> DJango -> Hard to learn
+# MVC -> Model View Controller -> React js , Lavel , Node Js etc.. -> Easy to learn 
+
+First we will learn -> View(connection between model and Templates)
+Second we will learn -> Templates -. Frontend(Html, CSS ,Bootstrap)
+Third we will learnMOdel -> Database
+
+
+Django -> Full installtion , virtual environment
+
+After Full installtion 
+------------------------
+Check in cmd
+
+->  django -admin --version
+
+to uninstall django
+
+-> pip uninstall django
+
+
+________________________________________________________________________________________________________
+
+Download in Virtual Environment
+--------------------------------
+Note -> DJango Should be uninstall from computer before using it in Virtual Environment
+
+Steps :- 
+
+First we will Create Virtual Environment Wrapper
+Second we will Create Virtual Environment 
+Third we will Install Django 
+
+Codes to Be use : )  -> 
+
+First we will Install Virtual Environment Wrapper
+-> pip install virtualenvwrapper-win
+
+Second we will Install Virtual Environment Wrapper
+-> mkvirtualenv environment_name
+
+Third we will Install Django
+-> pip install django
+
+How to use the virtual environment ?
+             or
+How to Active the virtual environment ?
+-> workon environment_name
+
+
+
+Uninstall The Virtual Environment
+---------------------------------
+First go inside the Virtual environment using -> workon environment_name
+-> pip uninstall django
+
+Second go out of the environment , open new cmd
+-> rmvirtualen environment_name
+
+Third Uninstall virtual environment wrapper
+-> pip uninstall virtualenvwrapper-win
+
+django -admin startproject projectname
+
+
+python manage.py startapp appname
+
+
+
+
+

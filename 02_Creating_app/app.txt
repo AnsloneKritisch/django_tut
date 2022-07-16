@@ -1,0 +1,54 @@
+----------------------------------------------------------------------
+
+django-admin startproject dj2
+
+----------------------------------------------------------------------
+
+cd dj2
+
+----------------------------------------------------------------------
+
+python manage.py startapp mu
+
+----------------------------------------------------------------------
+
+python manage.py runserver
+
+----------------------------------------------------------------------
+
+dj2 -> setting.py -> Installed_App -> appname
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'mu',
+]
+
+-------------------------------------------------
+
+
+dj2 -> url.py -> 
+
+from django.urls import path
+from mu import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('dj_co/',views.django_course),
+]
+
+-------------------------------------------------------
+
+mu -> views.py ->
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def django_course(request):
+    return HttpResponse("Hello World Part 2 ")
+
+--------------------------------------------------------
