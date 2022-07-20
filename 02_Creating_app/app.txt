@@ -33,7 +33,20 @@ INSTALLED_APPS = [
     'app_name',
 ]
 
--------------------------------------------------
+-------------------------------------------------------
+
+Create a View Point or what you wnat to show in the website
+
+Go to -> app_name -> views.py ->
+
+from django.http import HttpResponse
+from django.shortcuts import render
+from django.http import HttpResponse
+
+def django_app_name(request):
+    return HttpResponse("Hello World ")
+
+----------------------------------------------------------------------
 
 
 project_name -> url.py -> we import app_data 
@@ -47,20 +60,7 @@ urlpatterns = [
     path('dj_co/',views.django_course),
 ]
 
--------------------------------------------------------
 
-Create a View Point or what you wnat to show in the website
-
-Go to -> app_name -> views.py ->
-
-from django.http import HttpResponse
-from django.shortcuts import render
-from django.http import HttpResponse
-
-def django_course(request):
-    return HttpResponse("Hello World Part 2 ")
-
-----------------------------------------------------------------------
 
 python manage.py runserver
 
