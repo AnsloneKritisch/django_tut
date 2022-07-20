@@ -17,11 +17,11 @@ Then Create an app :-
 
 ----------------------------------------------------------------------
 
-python manage.py runserver
-
-----------------------------------------------------------------------
+Install the apps in project folder
 
 project_name -> setting.py -> Installed_App -> appname
+
+>>
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -49,7 +49,9 @@ urlpatterns = [
 
 -------------------------------------------------------
 
-app_name -> views.py ->
+Create a View Point or what you wnat to show in the website
+
+Go to -> app_name -> views.py ->
 
 from django.http import HttpResponse
 from django.shortcuts import render

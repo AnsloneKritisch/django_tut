@@ -18,3 +18,23 @@ Then Create multiple app :-
 >> python manage.py startapp app_name3
 
 ----------------------------------------------------------------------
+
+Install the apps in project folder
+
+project_name -> setting.py -> Installed_App -> appname
+
+>>
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'app_name1',
+    'app_name2',
+    'app_name3',
+]
+
+-------------------------------------------------
