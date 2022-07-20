@@ -16,7 +16,7 @@ python manage.py runserver
 
 ----------------------------------------------------------------------
 
-dj2 -> setting.py -> Installed_App -> appname
+project_name -> setting.py -> Installed_App -> appname
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -31,8 +31,9 @@ INSTALLED_APPS = [
 -------------------------------------------------
 
 
-app_name -> url.py -> we import app_data 
+project_name -> url.py -> we import app_data 
 
+from django.contrib import admin
 from django.urls import path
 from app_name import views
 
@@ -52,4 +53,8 @@ from django.http import HttpResponse
 def django_course(request):
     return HttpResponse("Hello World Part 2 ")
 
---------------------------------------------------------
+----------------------------------------------------------------------
+
+python manage.py runserver
+
+----------------------------------------------------------------------
