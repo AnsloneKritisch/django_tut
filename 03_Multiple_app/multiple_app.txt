@@ -4,3 +4,17 @@ First Create a Project
 >> django-admin startproject project_name
 
 ----------------------------------------------------------------------
+
+To create app we need to be inside the Project_name Directory
+
+>> cd project_name
+
+----------------------------------------------------------------------
+
+Then Create multiple app :-
+
+>> python manage.py startapp app_name1
+>> python manage.py startapp app_name2
+>> python manage.py startapp app_name3
+
+----------------------------------------------------------------------

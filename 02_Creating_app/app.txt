@@ -5,11 +5,15 @@ First Create a Project
 
 ----------------------------------------------------------------------
 
-cd project_name
+To create app we need to be inside the Project_name Directory
+
+>> cd project_name
 
 ----------------------------------------------------------------------
 
-python manage.py startapp app_name
+Then Create an app :-
+
+>> python manage.py startapp app_name
 
 ----------------------------------------------------------------------
 
