@@ -1,6 +1,7 @@
 ----------------------------------------------------------------------
+First Create a Project 
 
-django-admin startproject project_name
+>> django-admin startproject project_name
 
 ----------------------------------------------------------------------
 
