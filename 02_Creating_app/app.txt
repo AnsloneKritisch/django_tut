@@ -41,13 +41,13 @@ Go to -> app_name -> views.py ->
 
 from django.http import HttpResponse
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def django_app_name(request):
     return HttpResponse("Hello World ")
 
 ----------------------------------------------------------------------
 
+To Create Url So that you Can See the Website :-
 
 project_name -> url.py -> we import app_data 
 
@@ -57,10 +57,13 @@ from app_name import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('dj_co/',views.django_course),
+    path('dj_co/',views.django_app_name),
 ]
 
 
+----------------------------------------------------------------------
+
+Now time to Run the server Check our :-
 
 python manage.py runserver
 

@@ -38,3 +38,44 @@ INSTALLED_APPS = [
 ]
 
 -------------------------------------------------
+
+Inside every app
+
+Create a View Point or what you wnat to show in the website 
+
+Go to -> app_name -> views.py ->
+
+from django.http import HttpResponse
+from django.shortcuts import render
+
+
+def django_app_name(request):
+    return HttpResponse("Hello World ")
+
+----------------------------------------------------------------------
+
+
+To Create Url So that you Can See the Website :-
+
+project_name -> url.py -> we import app_data 
+
+from django.contrib import admin
+from django.urls import path
+from app_name1 import views as ap1
+from app_name2 import views as ap2
+from app_name3 import views as ap3
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('dj_app1/',ap1.django_app_name),
+    path('dj_app2/',ap2.django_app_name),
+    path('dj_app3/',ap3.django_app_name),
+]
+
+----------------------------------------------------------------------
+
+Now time to Run the server Check our :-
+
+python manage.py runserver
+
+----------------------------------------------------------------------
